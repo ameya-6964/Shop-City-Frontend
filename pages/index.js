@@ -4,6 +4,7 @@ import { PRODUCT_QUERY } from "../lib/query";
 import Product from "../Components/Product";
 import { Gallery } from "../styles/Gallery";
 
+
 export default function Home() {
   const [results] = useQuery({ query: PRODUCT_QUERY });
   const { data, fetching, error } = results;
@@ -21,6 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+       
         <Gallery>
           {products.map((product) => (
             // eslint-disable-next-line react/jsx-key
