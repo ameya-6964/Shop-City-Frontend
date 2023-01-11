@@ -40,3 +40,10 @@ p {
   line-height: 150%;
   color: var(--secondary);
 }
+
+@media (max-width: 800px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+}
