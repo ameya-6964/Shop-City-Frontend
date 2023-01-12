@@ -6,10 +6,9 @@ import { useStateContext } from "../lib/context";
 
 export default function Nav() {
   const { showCart, setShowCart } = useStateContext();
-  console.log(showCart);
   return (
     <NavStyles>
-      <Link href="/">Styled.</Link>
+      <Link href="/">Shop City 🛍️</Link>
       <NavItems>
         <div onClick={() => setShowCart(true)}>
           <FiShoppingBag />
